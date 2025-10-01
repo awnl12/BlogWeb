@@ -6,6 +6,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;    
+    
 }
 
 /* =============== INDEX ===================  */
@@ -173,14 +175,14 @@ color: rgb(131, 124, 124);
     width: 100%;
     margin-top: 1.3rem;
     justify-content: space-evenly;
-
+    border-radius: 8px;
 }
 
 .destinoContacto a {
     color: var(--color-principal);
     text-decoration: none;
     font-size: 1.2rem;
-    border-radius: 8px;
+   
 
 }
 
@@ -193,7 +195,11 @@ color: rgb(131, 124, 124);
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    background: rgb(31, 12, 181);
+    background: rgb(64, 121, 170);
+    width: 100%;
+    margin-left: -0.1rem;
+    font-weight: 700;
+
 }
 
 .contacto div{
@@ -207,6 +213,6 @@ color: rgb(131, 124, 124);
 
 .contacto button:hover{
    transform: scale(1.2);
-    background-color: rgb(27, 12, 117);
+    background-color: rgb(221, 136, 39);
     color: black;
 }
