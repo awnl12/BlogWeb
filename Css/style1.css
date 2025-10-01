@@ -1,0 +1,212 @@
+:root {
+  --color-principal: white;
+}  /* var(--principal) */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============== INDEX ===================  */
+/* <HEADER> */
+h1{
+    font-size: 2rem;
+    text-align: center;
+    font-style: oblique;
+}
+
+h1 span{
+display: block;
+font-size: 1rem;
+color: rgb(131, 124, 124);
+}
+
+.destinosIndex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top:2 rem;
+    background-color:blue;
+    font-weight: 700;
+    align-items: flex-start;
+   
+    
+}
+
+@media (min-width: 768px) {
+  .destinosIndex{
+    flex-direction: row;
+     justify-content: space-evenly;
+  }
+}
+
+.destinosIndex a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: inline;
+    border-radius: 10px ;
+    padding:1rem;
+    
+    
+}
+
+.destinosIndex a:hover{
+    background: black;
+    color:  cyan;
+  
+}
+
+/* </HEADER> */
+
+/* <BODY>  */
+.h2body {
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.3rem; 
+    font-style: initial;
+    
+}
+
+.h2body span{
+   font-size: small;
+   color: rgb(131, 124, 124);
+   display: inline;
+}
+
+.h2body p{
+    font-size: 0.91rem;
+    font-style: initial;
+    
+}
+
+/* </BODY>  */
+
+
+
+
+
+
+/* ==================== SOBRE MI ==================*/
+
+/*<Header>*/
+
+.destinoSm{
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    justify-content:space-evenly;
+    padding: 1.2rem;
+    margin-top: 1rem;
+}
+
+.destinoSm a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.destinoSm :hover{
+    background-color: black;
+    padding: 0.1rem; 
+}
+
+/*</Header>*/
+
+
+
+
+
+
+
+
+
+
+/* ============= CLIENTES ================*/
+/* <Header> */
+
+.destinoCli{
+    display: flex;
+    background-color: blue;
+    justify-content:space-evenly; 
+    padding: 1.2rem;
+    width: 100%;
+    margin-top: 1.3rem;
+}
+
+.destinoCli a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.destinoCli :hover{
+    background-color: black;
+    padding: 0.1rem;
+}
+
+
+
+/* </HEADER> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== CONTACTO ============== */
+
+.destinoContacto{
+    display: flex;
+    background-color: blue;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1.3rem;
+    justify-content: space-evenly;
+
+}
+
+.destinoContacto a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+
+}
+
+.destinoContacto :hover{
+    background-color: black;
+    padding: 0.1rem;
+}
+
+.contacto{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: rgb(31, 12, 181);
+}
+
+.contacto div{
+    margin: 0.5rem;
+}
+
+.contacto button{
+    transform: scale(1);
+}
+
+
+.contacto button:hover{
+   transform: scale(1.2);
+    background-color: rgb(27, 12, 117);
+    color: black;
+}
