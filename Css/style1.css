@@ -98,10 +98,8 @@ color: rgb(131, 124, 124);
     flex-direction: column;
     background-color: blue;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 700;
-    align-items: flex-start;
-  
 }
 
 @media (min-width: 768px) {
@@ -117,12 +115,11 @@ color: rgb(131, 124, 124);
     font-size: 1.2rem;
     border-radius: 10px;
      padding: 1rem;
-  
 }
 
-.destinoSm :hover{
+.destinoSm a:hover{
     background-color: black;
-    padding: 0.1rem; 
+    margin: 0.1rem;
 }
 
 /*</Header>*/
