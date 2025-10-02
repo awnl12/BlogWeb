@@ -45,7 +45,6 @@ color: rgb(131, 124, 124);
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
-    display: inline;
     border-radius: 10px ;
     padding:1rem;
     
@@ -55,7 +54,7 @@ color: rgb(131, 124, 124);
 .destinosIndex a:hover{
     background: black;
     color:  cyan;
-  
+    margin: 0.1rem;
 }
 
 /* </HEADER> */
@@ -94,18 +93,29 @@ color: rgb(131, 124, 124);
 
 .destinoSm{
     display: flex;
+    flex-direction: column;
     background-color: blue;
     width: 100%;
-    justify-content:space-evenly;
-    padding: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    align-items: flex-start;
+  
+}
+
+@media (min-width: 768px) {
+  .destinoSm{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .destinoSm a{
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    border-radius: 8px;
+    border-radius: 10px;
+     padding: 1rem;
+  
 }
 
 .destinoSm :hover{
