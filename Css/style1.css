@@ -1,248 +1,196 @@
 :root {
   --color-principal: white;
-}  /* var(--principal) */
+}  
 
-html{
-    font-size: 62.5%;
-    box-sizing: border-box;
-
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-*, *:before, *:after{
-    box-sizing: inherit;
-}
-
-body{
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;    
-    
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;    
 }
 
 /* =============== INDEX ===================  */
 /* <HEADER> */
-h1{
-    font-size: 2rem;
-    text-align: center;
-    font-style: oblique;
+h1, h2, h3 {
+  text-align: center;
 }
-
-h1 span{
-display: block;
-font-size: 1rem;
-color: rgb(131, 124, 124);
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+h1 span {
+  display: block;
+  font-size: 1rem;
+  color: rgb(131, 124, 124);
+}
+h2, p {
+  color: white;
 }
 
 .destinosIndex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top:2 rem;
-    background-color:blue;
-    font-weight: 700;
-    align-items: flex-start;
-   
-    
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem; 
+  background-color: blue;
+  font-weight: 700;
+  align-items: flex-start;
 }
-
 @media (min-width: 768px) {
-  .destinosIndex{
+  .destinosIndex {
     flex-direction: row;
-     justify-content: space-evenly;
+    justify-content: space-evenly;
   }
 }
-
 .destinosIndex a {
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px ;
-    padding:1rem;
-    
-    
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 1rem;
 }
-
-.destinosIndex a:hover{
-    background: black;
-    color:  cyan;
-    margin: 0.1rem;
+.destinosIndex a:hover {
+  background: black;
+  color: cyan;
+  margin: 0.1rem;
 }
-
 /* </HEADER> */
 
 /* <BODY>  */
 
-.hero{
-    background-image: url(/Image/BgHero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40%;
-    position: relative;
+
+
+
+/*
+Display Flex row
+align-items : vertical
+justify content : horizontal
+
+display flex
+flex direction column
+align-items: horizontal
+justify content: vertical
+
+*/
+.hero {
+  background-image: url(/Image/BgHero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
+  position: relative;
 }
-
-
-
-
 .h2body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb( 0 0 0 / 70%);
-    
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-.h2body span{
-   font-size: small;
-   color: rgb(131, 124, 124);
-   display: inline;
+.h2body span {
+  font-size: small;
+  color: rgb(131, 124, 124);
+  display: inline;
 }
-
-.h2body p{
-    font-size: 0.91rem;
-    font-style: initial;
-    
+.h2body p {
+  font-size: 0.91rem;
+  font-style: initial;
 }
-
 /* </BODY>  */
 
-
-
-
-
-
 /* ==================== SOBRE MI ==================*/
-
 /*<Header>*/
-
-.destinoSm{
- display: flex;
- flex-direction: column;
- background-color: blue;
+.destinoSm {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
 }
-
 @media (min-width: 768px) {
-  .destinoSm{
+  .destinoSm {
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-
-.destinoSm a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 10px;
-     padding: 1rem;
-   
+.destinoSm a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 1rem;
 }
-
-.destinoSm a:hover{
-    background-color: black;
-    margin: 0.1rem;
+.destinoSm a:hover {
+  background-color: black;
+  margin: 0.1rem;
 }
-
 /*</Header>*/
-
-
-
-
-
-
-
-
-
 
 /* ============= CLIENTES ================*/
 /* <Header> */
-
-.destinoCli{
-    display: flex;
-    background-color: blue;
-    justify-content:space-evenly; 
-    padding: 1.2rem;
-    width: 100%;
-    margin-top: 1.3rem;
+.destinoCli {
+  display: flex;
+  background-color: blue;
+  justify-content: space-evenly; 
+  padding: 1.2rem;
+  width: 100%;
+  margin-top: 1.3rem;
 }
-
-.destinoCli a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 8px;
+.destinoCli a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
 }
-
-.destinoCli :hover{
-    background-color: black;
-    padding: 0.1rem;
+.destinoCli a:hover {  
+  background-color: black;
+  padding: 0.1rem;
 }
-
-
-
 /* </HEADER> */
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* =============== CONTACTO ============== */
-
-.destinoContacto{
-    display: flex;
-    background-color: blue;
-    padding: 1rem;
-    width: 100%;
-    margin-top: 1.3rem;
-    justify-content: space-evenly;
-    border-radius: 8px;
+.destinoContacto {
+  display: flex;
+  background-color: blue;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1.3rem;
+  justify-content: space-evenly;
+  border-radius: 8px;
 }
-
 .destinoContacto a {
-    color: var(--color-principal);
-    text-decoration: none;
-    font-size: 1.2rem;
-   
-
+  color: var(--color-principal);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.destinoContacto a:hover { 
+  background-color: black;
+  padding: 0.1rem;
 }
 
-.destinoContacto :hover{
-    background-color: black;
-    padding: 0.1rem;
+.contacto {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: rgb(64, 121, 170);
+  width: 100%;
+  font-weight: 700;
+}
+.contacto div {
+  margin: 0.5rem;
 }
 
-.contacto{
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    background: rgb(64, 121, 170);
-    width: 100%;
-    margin-left: -0.1rem;
-    font-weight: 700;
-
-}
-
-.contacto div{
-    margin: 0.5rem;
-}
-
-.contacto button{
-    transform: scale(1);
-}
-
-
-.contacto button:hover{
-   transform: scale(1.2);
-    background-color: rgb(221, 136, 39);
-    color: black;
+.contacto button:hover {
+  transform: scale(1.2);
+  background-color: rgb(221, 136, 39);
+  color: black;
 }
