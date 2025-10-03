@@ -2,7 +2,18 @@
   --color-principal: white;
 }  /* var(--principal) */
 
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
+    font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
@@ -62,13 +73,26 @@ color: rgb(131, 124, 124);
 /* </HEADER> */
 
 /* <BODY>  */
+
+.hero{
+    background-image: url(/Image/BgHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+}
+
+
+
+
 .h2body {
-    margin: 3rem;
+    margin: 1rem;
     text-align: center;
     font-size: 1.3rem; 
     font-style: initial;
     
 }
+
+
 
 .h2body span{
    font-size: small;
@@ -96,6 +120,7 @@ color: rgb(131, 124, 124);
 .destinoSm{
  display: flex;
  flex-direction: column;
+ background-color: blue;
 }
 
 @media (min-width: 768px) {
