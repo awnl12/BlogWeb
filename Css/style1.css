@@ -33,7 +33,7 @@ h1 span {
   color: rgb(131, 124, 124);
 }
 h2, p {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .destinosIndex {
@@ -81,6 +81,9 @@ align-items: horizontal
 justify content: vertical
 
 */
+.heroMain{
+
+}
 .hero {
   background-image: url(/Image/BgHero.jpg);
   background-repeat: no-repeat;
@@ -100,12 +103,16 @@ justify content: vertical
 }
 .h2body span {
   font-size: small;
-  color: rgb(131, 124, 124);
+  color: #fff;
   display: inline;
 }
 .h2body p {
+  color: #fff;
   font-size: 0.91rem;
   font-style: initial;
+}
+.h2body h2{
+  color:  #fff;
 }
 /* </BODY>  */
 
